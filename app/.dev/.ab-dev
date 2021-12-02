@@ -1,0 +1,17 @@
+{
+    "abDependencies": {
+        "ab-exec-processor": "https://github.com/allblue-pl/node_ab-exec-processor",
+        "ab-fs": "https://github.com/allblue-pl/node_ab-fs",
+        "ab-fs-matcher": "https://github.com/allblue-pl/node_ab-fs-matcher",
+        "ab-fs-watcher": "https://github.com/allblue-pl/node_ab-fs-watcher",
+        "ab-log": "https://github.com/allblue-pl/node_ab-log",
+        "ab-mysql": "https://github.com/allblue-pl/node_ab-mysql",
+        "ab-tasks": "https://github.com/allblue-pl/js_ab-tasks",
+        "ab-text-parser": "https://github.com/allblue-pl/js_ab-text-parser",
+        "ab-xml-parser": "https://github.com/allblue-pl/node_ab-xml-parser",
+        "ab-web": "https://github.com/allblue-pl/node_ab-web",
+        "espada_db-sync": "https://github.com/allblue-pl/node_espada_db-sync",
+        "js0": "https://github.com/allblue-pl/js_js0",
+        "js-libs": "https://github.com/allblue-pl/node_js-libs"
+    }
+}

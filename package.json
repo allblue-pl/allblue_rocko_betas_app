@@ -1,0 +1,19 @@
+{
+  "name": "allblue_rocko_betas_app",
+  "version": "0.0.1",
+  "description": "Boulder betas qrcodes generator.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "\u0016\u001b[2~https://github.com/allblue-pl/allblue_rocko_betas_app"
+  },
+  "author": "AllBlue",
+  "license": "LGPL-2.1-only",
+  "devDependencies": {
+    "electron": "16.0.*"
+  }
+}

@@ -1,0 +1,31 @@
+{
+    "abDependencies": {
+        "ab-bootstrap": "https://github.com/allblue-pl/node_ab-bootstrap",
+        "ab-bootstrap-datetimepicker": "https://github.com/allblue-pl/web-js_ab-bootstrap-datetimepicker",
+        "ab-cookies": "https://github.com/allblue-pl/web-js_ab-cookies",
+        "ab-date": "https://github.com/allblue-pl/js_ab-date",
+        "ab-fields": "https://github.com/allblue-pl/js_ab-fields",
+        "ab-gallery": "https://github.com/allblue-pl/web-js_ab-gallery",
+        "ab-layouts": "https://github.com/allblue-pl/web-js_ab-layouts",
+        "ab-native": "https://github.com/allblue-pl/web-js_ab-native",
+        "ab-nodes": "https://github.com/allblue-pl/web-js_ab-nodes",
+        "ab-pager": "https://github.com/allblue-pl/web-js_ab-pager",
+        "ab-resource-preloader": "https://github.com/allblue-pl/web-js_ab-resource-preloader",
+        "ab-strings": "https://github.com/allblue-pl/js_ab-strings",
+        "ab-text": "https://github.com/allblue-pl/js_ab-text",
+        "ab-text-parser": "https://github.com/allblue-pl/js_ab-text-parser",
+        "ab-time": "https://github.com/allblue-pl/js_ab-time", 
+        "ab-timer": "https://github.com/allblue-pl/js_ab-timer",
+        "magda-styles": "https://github.com/allblue-pl/css_magda-styles",
+        "js0": "https://github.com/allblue-pl/js_js0",
+        "js-libs-web": "https://github.com/allblue-pl/web-js_js-libs-web",
+        "spk-file-upload": "https://github.com/allblue-pl/spk_spk-file-upload",
+        "spk-forms": "https://github.com/allblue-pl/spk_spk-forms",
+        "spk-lemon-bee": "https://github.com/allblue-pl/spk_spk-lemon-bee",
+        "spk-messages": "https://github.com/allblue-pl/spk_spk-messages",
+        "spk-tables": "https://github.com/allblue-pl/spk_spk-tables",
+        "spk-tinymce": "https://github.com/allblue-pl/spk_spk-tinymce",
+        "spocky": "https://github.com/allblue-pl/web-js_spocky",
+        "web-ab-api": "https://github.com/allblue-pl/web-js_web-ab-api"
+    }
+}

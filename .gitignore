@@ -1,3 +1,7 @@
+
+/ffmpeg
+/tmp
+
 # Logs
 logs
 *.log

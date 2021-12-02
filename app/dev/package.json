@@ -1,0 +1,9 @@
+{
+  "name": "allblue_rocko_betas_app_dev",
+  "dependencies": {
+    "electron": "16.0.*",
+    "jquery": "3.4.*",
+    "sortablejs": "1.14.*"
+  },
+  "version": "0.0.1"
+}
