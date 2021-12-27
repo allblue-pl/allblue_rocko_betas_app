@@ -16898,3 +16898,62 @@ readers do not read off random characters that represent icons */
   border: 1px solid #dee2e6;
   border-radius: 0.25rem;
 }
+
+h1, .h1, h2, .h2, h3, .h3 {
+  color: #494949;
+}
+
+.app-holder {
+  position: relative;
+  min-height: 100vh;
+}
+.app-holder .app-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../../../../web-app/core/images/app-bg.jpg");
+  z-index: 0;
+}
+.app-holder .content-holder {
+  position: relative;
+  z-index: 1;
+}
+.app-holder .content-holder .btn-lg, .app-holder .content-holder .btn-group-lg > .btn {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.app-holder .content-holder .home-hint {
+  padding-top: 1rem;
+  text-align: center;
+}
+.app-holder .header-holder {
+  position: relative;
+  padding: 1rem;
+  z-index: 1;
+}
+.app-holder .header-holder img {
+  max-height: 40px;
+}
+
+.hint {
+  color: #979797;
+}
+
+.hint-sm {
+  font-size: 0.75rem;
+}
+
+.list-holder {
+  margin-bottom: 2rem;
+}
+.list-holder i {
+  color: #979797;
+}
+.list-holder .list-input {
+  padding-left: 0;
+}
+.list-holder .list-group-item {
+  padding: 0.5rem !important;
+}

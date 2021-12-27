@@ -1,9 +1,13 @@
 
+h1, h2, h3 {
+    color: rgb(73, 73, 73);
+}
+
 .app-holder {
     position: relative;
     min-height: 100vh;
     .app-bg {
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 0;
         width: 100%;
@@ -18,7 +22,7 @@
             width: 100%;
             margin-bottom: 1rem;
         }
-        .hint-holder {
+        .home-hint {
             padding-top: 1rem;
             text-align: center;
         }
@@ -37,5 +41,18 @@
     color: rgb(151, 151, 151);
 }
 .hint-sm {
-    font-size: $font-size-base * 0.8;
+    font-size: $font-size-base * 0.75;
+}
+
+.list-holder {
+    margin-bottom: 2rem;
+    i {
+        color: rgb(151, 151, 151);
+    }
+    .list-input {
+        padding-left: 0;
+    }
+    .list-group-item {
+        padding: 0.5rem !important;
+    }
 }

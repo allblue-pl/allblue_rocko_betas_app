@@ -534,20 +534,8 @@ class js0_Class
 
             /* Class */
             if (!(value instanceof valueType)) {
-                let valueStr = String(value);
-                errors.push(`Variable \`${valueStr}\` is not an instance of` +
+                errors.push(`Variable \`${value}\` is not  an instance of` +
                         ` \`${valueType.name}\`.`);
-                return false;
-            }
-
-            return true;
-        }
-
-        if (typeofValueType === 'symbol') {
-            if (value !== valueType) {
-                let value_Str = String(value);
-                let valueType_Str = String(valueType);
-                errors.push(`Variable '${valueStr}' is not ${valueType_Str}.`);
                 return false;
             }
 
