@@ -1,0 +1,41 @@
+
+.app-holder {
+    position: relative;
+    min-height: 100vh;
+    .app-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('../images/app-bg.jpg');
+        z-index: 0;
+    }
+    .content-holder {
+        position: relative;
+        z-index: 1;
+        .btn-lg {
+            width: 100%;
+            margin-bottom: 1rem;
+        }
+        .hint-holder {
+            padding-top: 1rem;
+            text-align: center;
+        }
+    }
+    .header-holder {
+        position: relative;
+        padding: 1rem;
+        z-index: 1;
+        img {
+            max-height: 40px;
+        }
+    }
+}
+
+.hint {
+    color: rgb(151, 151, 151);
+}
+.hint-sm {
+    font-size: $font-size-base * 0.8;
+}
