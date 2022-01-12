@@ -40,7 +40,9 @@ async function createQRCodes_Async(clipInfos, ytLink, qrCodesLocation) {
     fs.copyFileSync(`./data/images/background.png`, `./tmp/system/qrCodes.png`);
     await addQRCodeOverlays_Async(clipInfos);
 
-    fs.renameSync(`./tmp/system/qrCodes.png`, qrCodesLocation);
+    // fs.renameSync(`./tmp/system/qrCodes.png`, qrCodesLocation);
+    fs.copyFileSync(`./tmp/system/qrCodes.png`, qrCodesLocation);
+    fs.unlinkSync(`./tmp/system/qrCodes.png`, qrCodesLocation);
     abFS.rmdirRecursiveSync('./tmp');
 
 }
@@ -118,5 +120,5 @@ function getUrl(clipInfos, ytLink, index) {
     for (let i = 0; i < index; i++)
         time += clipInfos[i].duration;
 
-    return `${ytLink}?t=${time}`;
+    return `${ytLink}?t=` + Math.floor(time);
 }   

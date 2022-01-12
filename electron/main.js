@@ -60,7 +60,7 @@ electron.ipcMain.on('BoulderBetas_ClipLocation_Select', (evt) => {
 electron.ipcMain.on('BoulderBetas_SelectFiles', (evt) => {
     electron.dialog.showOpenDialog({
         filters: [
-            { name: 'Movies', extensions: [ 'mp4' ], },
+            { name: 'Movies', extensions: [ 'mp4', 'mov' ], },
         ],
         properties: [ 'createDirectory', 'multiSelections', 'openFile', ],
     }).then((result) => {

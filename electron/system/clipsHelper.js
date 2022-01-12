@@ -40,7 +40,9 @@ async function createClip_Async(dBoulderBetas, clipFilePath) {
 
             let musicFSPath = await getMusicFSPath_Async(duration);
             if (musicFSPath === null) {
-                fs.renameSync(`./tmp/system/betas.mp4`, clipFilePath);
+                // fs.renameSync(`./tmp/system/betas.mp4`, clipFilePath);
+                fs.copyFileSync(`./tmp/system/betas.mp4`, clipFilePath);
+                fs.unlinkSync(`./tmp/system/betas.mp4`, clipFilePath);
                 resolve({
                     clipInfos: clipInfos,
                 });
@@ -56,7 +58,9 @@ async function createClip_Async(dBoulderBetas, clipFilePath) {
                     reject(err);
 
                 fs.unlinkSync(`./tmp/system/betas.mp4`);
-                fs.renameSync(`./tmp/system/betas_music.mp4`, clipFilePath);
+                // fs.renameSync(`./tmp/system/betas_music.mp4`, clipFilePath);
+                fs.copyFileSync(`./tmp/system/betas_music.mp4`, clipFilePath);
+                fs.unlinkSync(`./tmp/system/betas_music.mp4`, clipFilePath);
 
                 resolve({
                     clipInfos: clipInfos,

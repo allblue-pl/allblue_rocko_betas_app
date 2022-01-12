@@ -25,17 +25,31 @@ let indexDirPath = null;
 
 indexDirPath = '../../electron';
 
-config = {
-    index: indexDirPath,
+if (args.$('releaseType') === 'dev') {
+    config = {
+        index: indexDirPath,
 
-    dev: `${indexDirPath}/../web-app/dev`,
-    dist: `${indexDirPath}/web-app/dist`,
-    front: `${indexDirPath}/web-app/build/ab-web`,
-    back: `${indexDirPath}/web-app/cache/abWeb`,
-    tmp: `${indexDirPath}/web-app/tmp/ab-web`,
-    
-    base: '',
-};
+        dev: `${indexDirPath}/../web-app/dev`,
+        dist: `${indexDirPath}/web-app/dist`,
+        front: `${indexDirPath}/../web-app/build/ab-web`,
+        back: `${indexDirPath}/../web-app/cache/abWeb`,
+        tmp: `${indexDirPath}/../web-app/tmp/ab-web`,
+        
+        base: '',
+    };
+} else {
+    config = {
+        index: indexDirPath,
+
+        dev: `${indexDirPath}/../web-app/dev`,
+        dist: `${indexDirPath}/web-app/dist`,
+        front: `${indexDirPath}/web-app/build/ab-web`,
+        back: `${indexDirPath}/web-app/cache/abWeb`,
+        tmp: `${indexDirPath}/../web-app/tmp/ab-web`,
+        
+        base: '',
+    };
+}
 
 if (fs.existsSync(config.build))
     abFS.rmdirRecursiveSync(config.build);

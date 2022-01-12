@@ -20,10 +20,15 @@ class Main extends spocky.Module
 
         this._dBoulderBetas = [];
         this._dBoulderBetas_Order = [];
+        this._dBoulderBetas_Sorted = [];
         this._clipInfos = [];
         this._boulderBetas_Sortable = null;
 
         this.l = new $layouts.Main();
+
+        // this.l.$fields.base = BuildType === 'rel' ?
+        //     'web-app/' :                    
+        //     'web-app/';
 
         if (BuildType === 'dev')
             electron.ipcRenderer.send('Debug_OpenConsole');
@@ -48,9 +53,9 @@ class Main extends spocky.Module
         this.l.$elems.CreateClip.addEventListener('click', (evt) => {
             evt.preventDefault();
 
-            let dBoulderBetas_Sorted = [];
+            this._dBoulderBetas_Sorted = [];
             for (let order of this._dBoulderBetas_Order) {
-                dBoulderBetas_Sorted.push({
+                this._dBoulderBetas_Sorted.push({
                     Name: this.l.$elems.$get('BoulderBeta_Name', [ order ]).value,
                     FilePath: this._dBoulderBetas[order].FilePath,
                 });
@@ -62,7 +67,7 @@ class Main extends spocky.Module
                 (evt, clipFilePath) => {
             this.setView_CreatingClip();
             electron.ipcRenderer.send('BoulderBetas_Clip_Create', 
-                    this._dBoulderBetas, clipFilePath);
+                    this._dBoulderBetas_Sorted, clipFilePath);
         });
         electron.ipcRenderer.on('BoulderBetas_Clip_Created', 
                 (evt, result) => {
@@ -151,6 +156,7 @@ class Main extends spocky.Module
     {
         this._dBoulderBetas = [];
         this._dBoulderBetas_Order = [];
+        this._dBoulderBetas_Sorted = [];
         this._clipInfos = [];
         this.l.$fields.BoulderBetas = [];
         this.l.$fields.Display = 'Start';
